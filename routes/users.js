@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 const plm = require('passport-local-mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/pintrest");
+mongoose.connect("mongodb+srv://sarpalkunal7:kunal1234@cluster1.pc6dcst.mongodb.net/pintrest");
 const userSchema = new mongoose.Schema({
   username: {
     type: String,
     unique: true,
-    trim: true,
+    trim: true,x
   },
   password: {
     type: String
